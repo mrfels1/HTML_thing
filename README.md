@@ -1,3 +1,3 @@
 # My GitHub Project
 
-This is my GitHub project. I published it directly from Visual Studio Code.
+Делаю сайтик компании сока Lorem Juice Co., это будет курсовой работой
