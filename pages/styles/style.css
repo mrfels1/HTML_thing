@@ -36,12 +36,19 @@ a:hover {
 .header {
   font-family: "Fira Sans Condensed";
   background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 header {
   display: block;
 }
-
+.header_logo {
+  height: 155px;
+  width: 200px;
+  object-fit: cover;
+}
 .header .container {
   max-width: 1440px;
   padding: 0 60px 0 60px;
@@ -150,6 +157,10 @@ header {
   font-weight: 600;
   align-items: center;
 }
+.map {
+  position: relative;
+  right: 150px;
+}
 article {
   margin: 10px 10px 10px;
   padding-top: 10px;
@@ -164,3 +175,23 @@ article {
   background-color: rgb(181, 220, 255);
 }
 /*Main END*/
+
+/*Task trash*/
+
+.task_abs {
+  position: absolute;
+  top: 0px;
+  height: 150px;
+  object-fit: cover;
+  z-index: 4;
+}
+
+.task_fixd {
+  position: fixed;
+  top: 100px;
+  left: 450px;
+  z-index: 5;
+  font-size: 25px;
+  font-weight: 900;
+}
+/*Task trash END*/
