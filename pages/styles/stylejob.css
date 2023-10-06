@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
+
+body {
+  font-family: "Fira Sans Condensed";
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(0, 204, 255, 0.233),
+      rgba(255, 56, 56, 0.178)
+    ),
+    url("/pages/src/memphis-blue-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+a,
+a:focus {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  /*
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    */
+}
+
+/*Header related*/
+
+.header {
+  font-family: "Fira Sans Condensed";
+  background-color: white;
+  /*position: sticky;*/
+  top: 0px;
+  z-index: 3;
+}
+
+header {
+  display: block;
+}
+.header_logo {
+  height: 155px;
+  width: 200px;
+  object-fit: cover;
+}
+.header .container {
+  max-width: 1440px;
+  padding: 0 60px 0 60px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Menu*/
+.header_menu_wrapper {
+  width: 75%;
+  position: relative;
+}
+
+.header_menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header_menu-nav-link {
+  color: #3e3e3e;
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 39px 0;
+}
+/*Menu END*/
+/*Header related END*/
+
+.element_main {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+
+  border-width: 1px;
+  border-style: ridge;
+  border-color: #696969;
+  background-color: #ffffff;
+}
+
+form.form-example {
+  display: table;
+  position: relative;
+}
+
+div.form-example {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label,
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #696969;
+}
+
+#placeholder::placeholder {
+  color: aqua;
+}
+
+#pet-select:focus {
+  background-color: lightblue;
+}

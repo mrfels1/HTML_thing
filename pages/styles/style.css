@@ -36,7 +36,7 @@ a:hover {
 .header {
   font-family: "Fira Sans Condensed";
   background-color: white;
-  position: sticky;
+  /*position: sticky;*/
   top: 0px;
   z-index: 3;
 }
