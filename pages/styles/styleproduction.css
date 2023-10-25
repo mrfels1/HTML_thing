@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
 header {
   margin: 0 auto;
   padding: 20px 20px 20px 20px;
@@ -6,6 +7,7 @@ header {
   border-color: #696969;
   background-color: darkgray;
 }
+
 main {
   margin: 0 auto;
   padding: 20px 40px 20px 40px;
@@ -23,9 +25,9 @@ footer {
 }
 
 aside {
-  width: 20%;
-  padding-left: 20px;
-  margin-left: 20px;
+  width: 10%;
+  padding-left: 0px;
+  margin-left: 0px;
   float: right;
 }
 
@@ -43,10 +45,16 @@ a {
   border-radius: 10px;
 }
 
+.main {
+  align-self: auto;
+}
+
 body {
+  font-family: "Fira Sans Condensed";
   background-color: darkgray;
   font-size: 1.2rem;
-  padding: 10px 30px;
+  padding: 0px 0px 0px 0px;
+  align-self: auto;
 }
 
 #menu-toggle {
@@ -101,6 +109,7 @@ body {
   .menu-button-container {
     display: flex;
   }
+
   .menu {
     position: absolute;
     top: 0;
