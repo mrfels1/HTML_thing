@@ -77,6 +77,7 @@ body {
 .menu-button-container {
   display: none;
   width: 120%;
+  margin-left: 145px;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
@@ -91,6 +92,7 @@ body {
   position: absolute;
   height: 4px;
   width: 30px;
+
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
@@ -106,14 +108,23 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  html {
+    margin-left: 10px;
+    margin-right: -100px;
+  }
+
+  aside {
+    width: 50;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
   .menu-button-container {
     display: flex;
   }
 
   .menu {
-    position: absolute;
+    position: relative;
     top: 0;
-    margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
