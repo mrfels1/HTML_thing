@@ -191,7 +191,7 @@ button {
     display: block;
     padding: 0 30px;
     line-height: 40px;
-    transition: 0.5s;
+    transition: 1.5s;
     position: relative;
     background: #323237;
     content: attr(data-front);
