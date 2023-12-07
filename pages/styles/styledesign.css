@@ -264,7 +264,7 @@ button {
 }
 
 .card__description {
-  color: #777;
+  opacity: 0;
 }
 
 .card::before {
@@ -281,6 +281,11 @@ button {
 
 .card:hover {
   transform: scale(1.05);
+}
+.card:hover .card__description {
+  color: #eaeaea;
+  opacity: 1;
+  position: relative;
 }
 
 .card:hover::before {

@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4caf50;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-container {
+  width: 600px;
+  margin-top: 250px;
+  margin-left: calc(50% - 320px);
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  grid-column: span 3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  grid-column: span 2;
+  padding: 5px;
+  width: 400px;
+}
+
+input[type="submit"] {
+  grid-column: span 1;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.like {
+  text-align: center;
+  z-index: 5;
+}
+
+#like_button {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 100px;
+  width: 100px;
+}
+
+#like_button:hover {
+  cursor: pointer;
+}
+
+.love {
+  margin-top: -500px;
+  height: 1000px;
+  z-index: 1;
+}
+
+.love span {
+  background-image: url("/pages/src/heart.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
